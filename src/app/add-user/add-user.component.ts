@@ -7,7 +7,7 @@ import { Project } from "../_models/Project";
 @Component({
   selector: 'app-add-user',
   templateUrl: './add-user.component.html',
-  styleUrls: [ './add-user.component.scss' ]
+  styleUrls: [ './add-user.component.css' ]
 })
 export class AddUserComponent implements OnInit {
   email = '';
