@@ -1,0 +1,43 @@
+header {
+  background-color: black;
+  color: white;
+  font-size: 1.25rem;
+}
+
+header .logo{
+    width: 7.5rem;
+    filter: grayscale(100%) invert(100%);
+}
+header nav div ul{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+header nav div ul li{
+  background-color: black;
+}
+header nav div ul li a{
+  font-size: 1.4rem;
+  color: yellow;
+  margin-left: 15px;
+}
+header nav div ul li a.nav-link.active {
+  color: white;
+  border: solid white;
+  padding: 5px 5px 5px 5px;
+}
+
+header nav div ul li a:hover{
+  color: white;
+}
+
+header nav div a{
+  color:yellow;
+}
+
+
+
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
