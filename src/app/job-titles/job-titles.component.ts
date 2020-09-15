@@ -3,6 +3,7 @@ import { JobTitle } from '../_models/JobTitle';
 import { AuthService } from '../_services/auth.service';
 import { JobTitleService } from '../_services/job-title.service';
 import { DataValidatorService } from "../_services/data-validator.service";
+import { faLessThanEqual } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-jobs',
@@ -61,13 +62,19 @@ export class JobTitlesComponent implements OnInit {
     return this.validate.nonEmpty(this.editingJobTitle.name);
   }
 
+  isValidAmount(): boolean{
+    var amount = this.editingJobTitle.monthlyAmount;
+    if(amount % 1000 == 0){
+      return false;
+    }
+    return this.editingJobTitle.monthlyAmount > 0;
+  }
+
   keyPressOnAmount(event: KeyboardEvent): void {
     this.validate.numberKeyPress(event, this.editingJobTitle.monthlyAmount?.toString());
   }
 
-  isValidAmount(): boolean {
-    return this.validate.nonNegative(this.editingJobTitle.monthlyAmount);
-  }
+
 
   cancelEdit(): void {
     this.isInEditMode = false;
