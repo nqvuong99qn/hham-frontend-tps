@@ -43,8 +43,10 @@ export class AddJobTitleComponent implements OnInit {
   reset(): void {
     this.errorMessage = '';
     this.touched = { name: false, amount: false };
-    this.jobTitle = { name: '', monthlyAmount: 0 };
+    this.jobTitle = { name: null, monthlyAmount: null };
   }
+
+
 
   isValidName(): boolean {
     return this.jobTitle.name.length > 0;
@@ -55,6 +57,10 @@ export class AddJobTitleComponent implements OnInit {
   }
 
   isValidAmount(): boolean {
+    var amount = this.jobTitle.monthlyAmount;
+    if(amount % 1000 != 0){
+      return false;
+    }
     return this.validate.nonNegative(this.jobTitle.monthlyAmount);
   }
 }

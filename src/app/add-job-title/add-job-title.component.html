@@ -15,11 +15,15 @@
                [class.is-invalid]="touched.name && !isValidName()"
                [class.is-valid]="touched.name && isValidName()"
                class="form-control" id="name" name="name"
-               required type="text">
+               required type="text"
+               placeholder="Enter new job title">
       </div>
+
+      <!-- alart for input -->
       <div *ngIf="touched.name && !isValidName()" class="alert alert-danger" role="alert">
-        Name of the job title is required
+          Job title is empty  
       </div>
+
 
       <div class="form-group">
         <label class="required-field" for="monthlyAmount">Monthly amount</label>
@@ -29,22 +33,23 @@
                [class.is-invalid]="touched.amount && !isValidAmount()"
                [class.is-valid]="touched.amount && isValidAmount()"
                class="form-control" id="monthlyAmount" name="monthlyAmount"
-               required type="number" min="0" step="1000">
+               required type="number" min="0" step="1000"
+               placeholder="Enter monthly amount">
       </div>
       <div *ngIf="touched.amount && !isValidAmount()" class="alert alert-danger" role="alert">
-        Monthly funding amount must be a non-negative number
+        Amount of money is not okay!
       </div>
 
       <div class="text-center">
         <button (click)="create()" class="btn btn-success m-1" type="submit">
-          <i class="fas fa-plus"></i> Create
+          <i class="fas fa-plus"></i> ADD
         </button>
         <button (click)="reset()" class="btn btn-secondary m-1" type="button">
-          <i class="fas fa-undo"></i> Reset
+          <i class="fas fa-undo"></i> RESET
         </button>
         <button class="btn btn-secondary m-1" type="button">
           <a href="/jobs">
-          <i class="fas fa-arrow-left"></i> Back
+          <i class="fas fa-arrow-left"></i> BACK
           </a>
         </button>
       </div>

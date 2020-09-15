@@ -6,8 +6,10 @@ div button a{
 form h1{
     text-align: center;
     border: solid;
+    margin-bottom: 50px;
+    padding: 5px 5px 5px 5px;
 }
-div label{
+div label{  
     font-size: large;
 
 }
