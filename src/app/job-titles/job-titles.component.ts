@@ -7,7 +7,7 @@ import { DataValidatorService } from "../_services/data-validator.service";
 @Component({
   selector: 'app-jobs',
   templateUrl: './job-titles.component.html',
-  styleUrls: [ './job-titles.component.scss' ]
+  styleUrls: [ './job-titles.component.css' ]
 })
 export class JobTitlesComponent implements OnInit {
   jobTitles: JobTitle[];

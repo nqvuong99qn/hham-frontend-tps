@@ -8,12 +8,12 @@ import { DataValidatorService } from "../_services/data-validator.service";
 @Component({
   selector: 'app-add-job-title',
   templateUrl: './add-job-title.component.html',
-  styleUrls: [ './add-job-title.component.scss' ]
+  styleUrls: [ './add-job-title.component.css' ]
 })
 export class AddJobTitleComponent implements OnInit {
   jobTitle: JobTitle = {
-    name: '',
-    monthlyAmount: 0,
+    name: null,
+    monthlyAmount: null,
   };
   errorMessage = '';
   touched = { name: false, amount: false };

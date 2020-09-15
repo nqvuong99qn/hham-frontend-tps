@@ -3,7 +3,7 @@
     <div class="col-md-3"></div>
 
     <form class="col-md-6">
-      <h1 class="pb-3">Create new job title</h1>
+      <h1 class="pb-3">CREATE NEW JOB TITLE</h1>
 
       <!-- Messages -->
       <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
@@ -41,6 +41,11 @@
         </button>
         <button (click)="reset()" class="btn btn-secondary m-1" type="button">
           <i class="fas fa-undo"></i> Reset
+        </button>
+        <button class="btn btn-secondary m-1" type="button">
+          <a href="/jobs">
+          <i class="fas fa-arrow-left"></i> Back
+          </a>
         </button>
       </div>
     </form>
