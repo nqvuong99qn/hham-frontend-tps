@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
 @Component({
   selector: 'app-header',
   templateUrl: './app-header.component.html',
-  styleUrls: [ './app-header.component.scss' ]
+  styleUrls: [ './app-header.component.css' ]
 })
 export class AppHeaderComponent implements OnInit {
   projectsAdministering: Project[] = [];
