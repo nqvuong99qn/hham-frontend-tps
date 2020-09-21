@@ -1,0 +1,48 @@
+.my-custom-scrollbar {
+    position: relative;
+    height: 300 px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+th {
+    width: 100px;
+}
+  
+pre.a{
+    font-size: .7rem;
+    white-space: nowrap;
+    margin: 1;
+}
+
+/* div div.row{
+    top: 80px;
+    position: sticky;
+    align-self: flex-start;
+    
+} */
+div div div h2{
+    margin-bottom: 40px;
+}
+
+div div div button{
+    margin-bottom: 40px;
+}
+
+button#remind{
+
+}
+
+div div div h2.fund{
+    border: solid black;
+    padding: 5px 5px 5px 5px;
+    width: 60%;
+}
+
+div div div h2.balance{
+    border: solid black;
+    padding: 5px 5px 5px 5px;
+    margin-left: 70px;
+}

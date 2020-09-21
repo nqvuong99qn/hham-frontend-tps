@@ -1,0 +1,12 @@
+div h1{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 5px 5px 5px 5px;
+    border:solid black;
+}
+
+div form div input{
+    border: solid black;
+}

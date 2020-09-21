@@ -1,5 +1,18 @@
 <div class="container pt-5">
-  <h1 class="pb-3">Fund Management</h1>
+  <h1 class="pb-3">FUND MANAGEMENT</h1>
+
+  <div class="row mb-3">
+    <form class="col-md-12 form-inline">
+      <div class="btn-group ml-auto searchBox">
+        <input [(ngModel)]="searchTerm" (change)="turnOffFiltering()" class="form-control ml-auto" name="searchTerm"
+               placeholder="SEARCH BY NAME" type="text">
+        <button (click)="searchByName()" class="btn btn-secondary" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
   <table class="table table-striped">
     <thead class="thead-dark">
       <tr>
@@ -9,7 +22,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let p of projects">
+      <tr *ngFor="let p of searchResults">
         <td>{{ p.name }}</td>
         <td>{{p?.funds[0].amount | number}} VND</td>
         <td>
