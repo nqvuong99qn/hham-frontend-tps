@@ -16,7 +16,7 @@ declare var jQuery: any;
 @Component({
   selector: 'app-fund-details',
   templateUrl: './fund-details.component.html',
-  styleUrls: [ './fund-details.component.scss' ]
+  styleUrls: [ './fund-details.component.css' ]
 })
 export class FundDetailsComponent implements OnInit {
   currentProject: Project;
